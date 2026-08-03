@@ -1,0 +1,63 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"allowUnreachableCode": false,
+		"alwaysStrict": true,
+		"baseUrl": "./src",
+		"composite": false,
+		"downlevelIteration": false,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"incremental": true,
+		"jsx": "react",
+		"jsxFactory": "React.createElement",
+		"jsxFragmentFactory": "React.Fragment",
+		"module": "commonjs",
+		"moduleDetection": "force",
+		"esModuleInterop": true,
+		"moduleResolution": "Node",
+		"noImplicitAny": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noLib": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"outDir": "./out",
+		"declaration": false,
+		// "declarationDir": "./out/types",
+		"paths": {
+			"client/*": [
+				"client/*"
+			],
+			"server/*": [
+				"server/*"
+			],
+			"shared/*": [
+				"shared/*"
+			]
+		},
+		"plugins": [],
+		"pretty": true,
+		"removeComments": true,
+		"resolveJsonModule": false,
+		"rootDir": "./src",
+		"skipLibCheck": true,
+		"strict": true,
+		"strictBindCallApply": true,
+		"strictFunctionTypes": true,
+		"noFallthroughCasesInSwitch": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"target": "esnext",
+		"tsBuildInfoFile": "./out/tsconfig.tsbuildinfo",
+		"typeRoots": [
+			"./node_modules/@rbxts",
+		],
+		"useDefineForClassFields": true,
+		"useUnknownInCatchVariables": true
+	},
+	"include": [
+		"src"
+	],
+}

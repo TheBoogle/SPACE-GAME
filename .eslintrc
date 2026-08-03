@@ -1,0 +1,200 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"jsx": true,
+		"useJSXTextNode": true,
+		"ecmaVersion": 2018,
+		"sourceType": "module",
+		"project": "./tsconfig.json"
+	},
+	"ignorePatterns": [
+		"/out"
+	],
+	"plugins": [
+		"@typescript-eslint",
+		"roblox-ts",
+		"prettier",
+		"unused-imports",
+		"deprecation",
+		"jsdoc",
+		"import",
+		"filenames",
+		"no-relative-import-paths"
+	],
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:roblox-ts/recommended",
+		"plugin:prettier/recommended"
+	],
+	"rules": {
+		"deprecation/deprecation": "warn",
+		// "roblox-ts/lua-truthiness": "off",
+		"no-constant-condition": "off",
+		"unused-imports/no-unused-imports": "warn",
+		"import/no-default-export": "error",
+		"roblox-ts/no-getters-or-setters": "off",
+		"no-relative-import-paths/no-relative-import-paths": [
+			"error",
+			{
+				"allowSameFolder": false,
+				"rootDir": "src"
+			}
+		],
+		"filenames/match-exported": 2,
+		"unused-imports/no-unused-vars": [
+			"warn",
+			{
+				"vars": "all",
+				"varsIgnorePattern": "^(DeltaTime|_)",
+				"args": "none",
+				"argsIgnorePattern": "^(DeltaTime|_)"
+			}
+		],
+		"prettier/prettier": [
+			"warn",
+			{
+				"endOfLine": "auto"
+			}
+		],
+		// "jsdoc/require-jsdoc": [
+		// 	"warn",
+		// 	{
+		// 		"contexts": [
+		// 			"TSInterfaceDeclaration",
+		// 			"TSTypeAliasDeclaration",
+		// 			"ClassDeclaration"
+		// 		],
+		// 		"fixerMessage": "@category Shared"
+		// 	}
+		// ],
+		// "jsdoc/tag-lines": [
+		// 	"warn",
+		// 	"any",
+		// 	{
+		// 		"startLines": 1
+		// 	}
+		// ],
+		// "jsdoc/check-tag-names": [
+		// 	"warn",
+		// 	{
+		// 		"definedTags": [
+		// 			"category",
+		// 			"server",
+		// 			"client",
+		// 			"hidden",
+		// 			"uuid"
+		// 		]
+		// 	}
+		// ],
+		"@typescript-eslint/consistent-type-imports": "error",
+		"@typescript-eslint/quotes": [
+			"warn",
+			"double"
+		],
+		"@typescript-eslint/explicit-member-accessibility": "error",
+		"@typescript-eslint/naming-convention": [
+			"warn",
+			{
+				"selector": "default",
+				"format": [
+					"PascalCase"
+				],
+				"leadingUnderscore": "allow"
+			},
+			{
+				"selector": "typeLike",
+				"format": [
+					"PascalCase"
+				]
+			},
+			{
+				"selector": "objectLiteralProperty",
+				"format": [
+					"PascalCase"
+				],
+				"leadingUnderscore": "allow"
+			},
+			{
+				"selector": "typeProperty",
+				"format": [
+					"PascalCase"
+				],
+				"leadingUnderscore": "allow"
+			},
+			{
+				"selector": "enumMember",
+				"format": [
+					"UPPER_CASE",
+					"PascalCase"
+				]
+			},
+			{
+				"selector": "enum",
+				"format": [
+					"PascalCase"
+				],
+				"prefix": [
+					"E"
+				]
+			},
+			{
+				"selector": "interface",
+				"format": [
+					"PascalCase"
+				],
+				"prefix": [
+					"I"
+				]
+			},
+			{
+				"selector": "method",
+				"filter": "^toString$",
+				"format": null
+			}
+		],
+		"@typescript-eslint/no-explicit-any": "error",
+		// "@typescript-eslint/consistent-type-definitions": [
+		// 	"warn",
+		// 	"interface"
+		// ],
+		"@typescript-eslint/no-inferrable-types": [
+			"warn",
+			{
+				"ignoreParameters": true,
+				"ignoreProperties": true
+			}
+		],
+		"@typescript-eslint/prefer-optional-chain": "warn",
+		"@typescript-eslint/member-delimiter-style": "off",
+		// "@typescript-eslint/strict-boolean-expressions": "warn",
+		"@typescript-eslint/switch-exhaustiveness-check": "warn",
+		"@typescript-eslint/explicit-function-return-type": [
+			"error",
+			{
+				"allowExpressions": true
+			}
+		],
+		"sort-imports": [
+			"warn",
+			{
+				"ignoreCase": true,
+				"ignoreDeclarationSort": true,
+				"ignoreMemberSort": false,
+				"memberSyntaxSortOrder": [
+					"none",
+					"all",
+					"multiple",
+					"single"
+				]
+			}
+		]
+	},
+	"settings": {
+		"jsdoc": {
+			"tagNamePreference": {
+				"category": "category"
+			}
+		}
+	}
+}
