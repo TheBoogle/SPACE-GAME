@@ -26,6 +26,7 @@
 		"eslint-plugin-roblox-ts": "^0.0.36",
 		"eslint-plugin-unused-imports": "^4.1.4",
 		"prettier": "^3.5.3",
+		"prettier-plugin-brace-style": "^0.10.3",
 		"roblox-ts": "^3.0.0",
 		"typescript": "^5.5.3"
 	},
